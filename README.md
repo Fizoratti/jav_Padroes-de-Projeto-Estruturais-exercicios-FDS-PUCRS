@@ -68,12 +68,12 @@ public class Celula {
     }
 }
 ```
-###4. Decorator
-####4.1.Exercício:
+### 4. Decorator
+#### 4.1.Exercício:
 Implemente o interceptador cronômetro apresentado no slide 53. Implemente também outros dois
 interceptadores: um que imprima uma mensagem de log antes de executar a tarefa (“<data/hora>:
 mensagem”) e outro que verifique se o minuto atual é um número par e, se for, interrompe a execução com uma mensagem de justificativa (“Execução interrompida em minuto par: <hora atual>”). Coloque os interceptadores na ordem log -> verificador-de-minuto -> cronômetro -> componente-concreto.
 
-####4.2.Exercício:
+#### 4.2.Exercício:
 Crie uma classe NumeroUm que tem um método imprimir() que imprime o número “1” na tela. Implemente
 decoradores para colocar parênteses, colchetes e chaves ao redor do número (ex.: “{1}”). Combine-os de diversas formas.
