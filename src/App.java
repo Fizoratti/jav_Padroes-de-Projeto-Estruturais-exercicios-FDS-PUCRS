@@ -11,17 +11,28 @@ deve navegar pela árvore e imprimir seus itens e tamanhos.
 
 public class App {
     public static void main(String args[]) {
+        System.out.println("started!");
+        CompositeNode root = new CompositeNode();
 
-        Message message = new Message("Hello World!");
-        System.out.println(message.getMessage());
+        Directory music = new Directory("MUSIC");
+        Directory scorpions = new Directory("SCORPIONS");
+        Directory dio = new Directory("DIO");
+        File track1 = new File("Don't wary, be happy.mp3");
+        File track2 = new File("track2.m3u");
+        File track3 = new File("Wind of change.mp3");
+        File track4 = new File("Big city night.mp3");
+        File track5 = new File("Rainbow in the dark.mp3");
 
-        Scanner ler = new Scanner(System.in);
+        root.add(music);
+        root.add(scorpions);
+        root.add(dio);
 
-        String texto = ler.next();
+        root.getChild(root.getChildIndex(music)).add(track1);
 
-        ler.close();
+        root.ls();
 
-        System.out.println(texto);
+        System.out.println("\nfinished!");
+        
 
     }
 }
