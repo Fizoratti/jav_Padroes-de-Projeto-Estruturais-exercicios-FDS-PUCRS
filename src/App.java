@@ -11,7 +11,7 @@ deve navegar pela árvore e imprimir seus itens e tamanhos.
 
 public class App {
     public static void main(String args[]) {
-        System.out.println("started!");
+        System.out.println("> Started!\n");
         CompositeNode root = new CompositeNode();
 
         Directory music = new Directory("MUSIC");
@@ -28,10 +28,14 @@ public class App {
         root.add(dio);
 
         root.getChild(root.getChildIndex(music)).add(track1);
+        root.getChild(root.getChildIndex(music)).add(track2);
+        root.getChild(root.getChildIndex(scorpions)).add(track3);
+        root.getChild(root.getChildIndex(scorpions)).add(track4);
+        root.getChild(root.getChildIndex(dio)).add(track5);
 
         root.ls();
 
-        System.out.println("\nfinished!");
+        System.out.println("\n> Finished!");
         
 
     }

@@ -21,6 +21,7 @@ class Directory extends AbstractNode {
         for (AbstractNode node : nodes) {
             System.out.print("C:/" + this.name + "/");
             node.ls();
+            System.out.print("\n");
         }
     }
 }
