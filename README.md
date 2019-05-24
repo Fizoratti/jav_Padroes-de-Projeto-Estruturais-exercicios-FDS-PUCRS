@@ -10,7 +10,7 @@
 
 # Exercícios
 ### 3. Composite
-- [ ] exercicio 3.1
+- [x] exercicio 3.1
 - [ ] exercicio 3.2
 
 ### 4. Decorator
