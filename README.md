@@ -9,6 +9,14 @@
     > .\make.bat
 
 # Exercícios
+### 1. Adapter
+- [x] exercicio 1.1
+- [x] exercicio 1.2
+
+### 2. Bridge
+- [ ] exercicio 2.1
+- [ ] exercicio 2.2
+
 ### 3. Composite
 - [x] exercicio 3.1
 - [ ] exercicio 3.2
