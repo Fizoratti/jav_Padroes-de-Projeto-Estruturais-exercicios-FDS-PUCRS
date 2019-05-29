@@ -1,9 +1,9 @@
 public class CompositeNode extends AbstractNode {
     
-    public void ls(){
+    public void imprimir(){
         // para cada c em children, faça a ls() da children
         for (AbstractNode c : super.children) {
-            c.ls();
+            c.imprimir();
         }
     }
     

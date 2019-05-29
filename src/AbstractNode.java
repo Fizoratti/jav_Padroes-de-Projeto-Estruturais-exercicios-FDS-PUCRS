@@ -3,7 +3,7 @@ import java.util.ArrayList;
 abstract class AbstractNode {
     public ArrayList<AbstractNode> children = new ArrayList<>();
 
-    abstract void ls();
+    abstract void imprimir();
 
     void add(AbstractNode node) {
         this.children.add(node);

@@ -1,4 +1,7 @@
-public class Linha {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Linha extends AbstractNode {
     private List<Celula> celulas = new ArrayList<Celula>();
     public void imprimir() {
         // Imprime a borda lateral.

@@ -1,4 +1,4 @@
-public class Celula {
+public class Celula extends AbstractNode {
     private String conteudo;
     public Celula(String conteudo) {
         this.conteudo = conteudo;
