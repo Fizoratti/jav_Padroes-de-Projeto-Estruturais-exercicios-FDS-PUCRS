@@ -21,7 +21,11 @@ abstract class AbstractNode {
         return this.children.get(index);
     }
 
-    int getChildIndex(AbstractNode node) {
+    int getChildrenSize() {
+        return this.children.size();
+    }
+
+    int getChildByIndex(AbstractNode node) {
         int value = 0;
         if(searchChild(node)) {
             // salva a posição do node na lista

@@ -6,7 +6,7 @@ public class Celula extends AbstractNode {
     public void imprimir() {
         // Limita o conteúdo a exatamente 15 caracteres.
         conteudo = conteudo + " ";
-        conteudo = conteudo.substring(0, 15);
+        conteudo = conteudo.substring(0, 6);
         // Imprime na mesma linha e com borda lateral.
         System.out.print(" | " + conteudo);
     }

@@ -29,22 +29,31 @@ public class App {
         Celula celula9 = new Celula("(3:3)");
 
         // Insere as celulas nas linhas
-        // linha1.add(celula1);
-        // linha1.add(celula2);
-        // linha1.add(celula3);
-        // linha2.add(celula4);
-        // linha2.add(celula5);
-        // linha2.add(celula6);
-        // linha3.add(celula7);
-        // linha3.add(celula8);
-        // linha3.add(celula9);
+        linha1.add(celula1);
+        linha1.add(celula2);
+        linha1.add(celula3);
+        linha2.add(celula4);
+        linha2.add(celula5);
+        linha2.add(celula6);
+        linha3.add(celula7);
+        linha3.add(celula8);
+        linha3.add(celula9);
 
         // Insere as linhas na Tabela
-        // tabela.adicionar(linha1);
-        // tabela.adicionar(linha2);
-        // tabela.adicionar(linha3);
+        tabela.add(linha1);
+        tabela.add(linha2);
+        tabela.add(linha3);
 
-        tabela.getChild(tabela.getChildIndex(linha1)).add(celula1);
+        System.out.println(tabela.getChildrenSize());
+        System.out.println(linha1.getChildrenSize());
+        celula1.imprimir();
+        System.out.println("foi!");
+
+        System.out.println(tabela.getChildByIndex(linha1));
+        System.out.println(tabela.getChildByIndex(linha2));
+        System.out.println(tabela.getChildrenSize());
+
+        // tabela.getChild(tabela.getChildByIndex(linha1)).add(celula1);
 
         // Imprime
         tabela.imprimir();
