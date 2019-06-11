@@ -2,35 +2,32 @@
 public class main {
 
 	public static void main(String[] args) {
-		ImprimeNumero in = new ImprimeNumero();
-		ImprimeSimbolo si = new ImprimeSimbolo();
 		
-		ListaOrdenada lo = new ListaOrdenada(in);
-		lo.adicionar("Pedro");
-		lo.adicionar("Robsu");
-		lo.adicionar("Michael");
-		lo.adicionar("Bruno");
-		lo.adicionar("Lu");
+		Integer b = 0;
+		String matriz[][] = new String[10][2];
 		
+		for(int i=0;i<10;i++) {
+			matriz[i][0] = "chave " + b.toString();
+			b++;
+		}
+		
+		for(int i=0;i<10;i++) {
+			matriz[i][1] = "valor " + b.toString();
+			b++;
+		}
+		
+		
+		System.out.println("Teste de Mapa");
 
-		ListaDesordenada ld = new ListaDesordenada(si);
-		ld.adicionar("Cachorro");
-		ld.adicionar("Macaco");
-		ld.adicionar("Elefante");
-		ld.adicionar("Girafa");
-		ld.adicionar("Abelha");
-		
-
-		System.out.println("Impressão da lista ordenada por número: ");
-		lo.imprimir();
-		
-
-		System.out.println("Impressão da lista desordenada por asteriscos: ");
-		ld.imprimir();
+		adapterMap mapa = new adapterMap(matriz);
+		System.out.println("Tamanho de Mapa");
+		System.out.println(matriz.length);
 		
 		
+		for(int i = 0; i<10;i++) {
+			System.out.println(mapa.get("chave " + i));
+		}
 		
-
 	}
 
 }
