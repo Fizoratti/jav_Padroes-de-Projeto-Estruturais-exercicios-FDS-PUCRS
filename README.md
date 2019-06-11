@@ -7,6 +7,9 @@
 ##### To run makefile on windows run
     
     > .\make.bat
+# Nomes
+- Pedro Leite Sasso
+- Robson Felipe Bittencourt
 
 # Exercícios
 ### 1. Adapter
