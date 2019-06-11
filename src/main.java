@@ -1,33 +1,22 @@
+package exercicio1;
 
 public class main {
 
 	public static void main(String[] args) {
 		
-		Integer b = 0;
-		String matriz[][] = new String[10][2];
+		CocaCola coca = new CocaCola();
+		Guarana guarana = new Guarana();
 		
-		for(int i=0;i<10;i++) {
-			matriz[i][0] = "chave " + b.toString();
-			b++;
-		}
-		
-		for(int i=0;i<10;i++) {
-			matriz[i][1] = "valor " + b.toString();
-			b++;
-		}
-		
-		
-		System.out.println("Teste de Mapa");
+		TamanhoPequeno refri1 = new TamanhoPequeno(coca);
+		TamanhoMedio refri2 = new TamanhoMedio(guarana);		
+		refri1.beber();
+		refri2.beber();
 
-		adapterMap mapa = new adapterMap(matriz);
-		System.out.println("Tamanho de Mapa");
-		System.out.println(matriz.length);
-		
-		
-		for(int i = 0; i<10;i++) {
-			System.out.println(mapa.get("chave " + i));
-		}
-		
+		System.out.println("Adições de Tamanho e Refrigerante:");
+		Fanta fanta = new Fanta();
+		TamanhoGrande refri3 = new TamanhoGrande(fanta);
+		refri3.beber();
+
 	}
 
 }
